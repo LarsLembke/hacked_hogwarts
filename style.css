@@ -2,3 +2,9 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+body {
+    background-color: black;
+    background-image: url(/HP_img/HP_assignment.png);
+    background-size: contain;
+}
