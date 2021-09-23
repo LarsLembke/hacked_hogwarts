@@ -45,23 +45,28 @@ html {
 
 #list {
 
-    margin-bottom: 5rem;
+    margin: -25rem 0rem 5rem 5rem;
     background: rgba(200, 137, 50, 0.2);
     overflow: hidden;
     
 }
 
-/* Buttons */
+/* Buttons/nav */
 
 
 #student_filter {
-    
-    margin: 1rem 2rem 1rem 2rem;
-    position: absolute;
+   align-items: center;
+    margin: 15rem 10rem 1rem 15rem;
+    /* position: absolute; */
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: -20rem;
+
 }
 
 #student_filter button {
-    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    /* margin: 0.5rem 0rem 0.5rem 0rem; */
     cursor: pointer;
    
     
@@ -69,7 +74,9 @@ html {
 
 .all img {
 
-    width: 60%;
+    position: relative;
+    width: 65%;
+    top: -0.5rem;
 }
 
 .all {
@@ -81,7 +88,10 @@ html {
   
 } 
 .expelled img{
-    width: 60%;
+    position: relative;
+    width: 150%;
+    top: 1.5rem;
+    right: 4rem;
 }
 
 .expelled {
@@ -99,13 +109,13 @@ html {
 
 .houses img{
     
-    width: 60%;
+    width: 50%;
    
 }
 
 .non-expelled img {
 
-    width: 60%;
+    width: 55%;
 
 }
 
@@ -118,7 +128,7 @@ html {
 
 .resp img {
 
-    width: 60%;
+    width: 85%;
 }
 
 .resp {
@@ -127,10 +137,4 @@ html {
     border: none; 
     background-color: transparent;
     
-}
-
-#student_filter {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   
 }
