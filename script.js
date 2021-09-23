@@ -15,6 +15,8 @@ let expelledStudents = [{
 
 }];
 
+let hacked = false;
+
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
@@ -343,6 +345,8 @@ function giveBlood(student, blood) {
 
 function togglePrefect(student) {
 
+
+
     const prefects = data.filter(studs => studs.prefect);
     const numberOfPrefect = prefects.length;
     const prefectsHouse = prefects.filter(studs => studs.type === student.type);
@@ -470,5 +474,152 @@ function giveId(student, students) {
 }
 
 function hackTheSystem() {
+
+    hacked = true;
+
+    document.querySelector(".student").removeEventListener;
+
+    console.log("!!!THE SYSTEM IS COMPROMISED!!!");
+
+    addSelf();
+
+    function addSelf() {
+
+        let charlie = {
+            fullname: "Nanna Charlie Vinther",
+            firstname: "Nanna",
+            middlename: "Charlie",
+            lastname: "Vinther",
+            house: "Hufflepuff",
+            blood: "half",
+            prefect: false,
+            squad: false,
+            id: 420
+        }
+
+        let lars = {
+            fullname: "Lars Michael Lembke",
+            firstname: "Lars",
+            middlename: "Michael",
+            lastname: "Lembke",
+            house: "Slytherin",
+            blood: "half",
+            prefect: false,
+            squad: false,
+            id: 666
+        }
+
+        data.push(charlie);
+        data.push(lars);
+
+        console.log(data);
+
+        hackedDisplay(data);
+
+    }
+
+
+    function hackedDisplay(hackedData) {
+
+        const temp = document.querySelector("#temp").content;
+        const dest = document.querySelector("#list");
+
+        dest.textContent = "";
+
+        hackedData.forEach(function(student) {
+            const clone = temp.cloneNode(true);
+
+            clone.querySelector("#fullname").textContent = student.fullname;
+            clone.querySelector("#house").textContent = student.house;
+            clone.querySelector(".student").addEventListener("click", () => hackedPopup(student));
+            dest.appendChild(clone);
+        });
+
+        document.querySelector("#no_students").textContent = "Students enrolled: " + dataAll.length;
+        document.querySelector("#no_expelled").textContent = "Students expelled: " + expelledStudents.length;
+        document.querySelector("#students_display").textContent = "Students on sreen: " + data.length;
+        document.querySelector("#no_g").textContent = "Student in Gryffindor: " + dataAll.filter(stud => stud.house === "Gryffindor").length;
+        document.querySelector("#no_h").textContent = "Student in Hufflepuff: " + dataAll.filter(stud => stud.house === "Hufflepuff").length;
+        document.querySelector("#no_r").textContent = "Student in Ravenclaw: " + dataAll.filter(stud => stud.house === "Ravenclaw").length;
+        document.querySelector("#no_s").textContent = "Student in Slytherin: " + dataAll.filter(stud => stud.house === "Slytherin").length;
+
+    }
+
+    function hackedPopup(student) {
+
+
+        let imgCode;
+
+        if (student.lastname === "Patil") {
+            imgCode = `images/${student.lastname.toLowerCase()}_${student.firstname.toLowerCase()}.png`;
+        } else {
+            imgCode = `images/${student.lastname.toLowerCase()}_${student.firstname[0].toLowerCase()}.png`;
+        }
+
+        const temp2 = document.querySelector("#temp_popup").content;
+        const dest2 = document.querySelector("#popup");
+
+        dest2.textContent = "";
+
+        const clone2 = temp2.cloneNode(true);
+
+        clone2.querySelector(".fullname_popup").textContent = student.fullname;
+        clone2.querySelector(".img_popup").src = imgCode;
+        clone2.querySelector(".house_popup").textContent = student.house;
+        clone2.querySelector(".blood_popup").textContent = randomizeBlood(student);
+        clone2.querySelector(".prefect_popup").textContent = student.prefect;
+        clone2.querySelector(".squad_popup").textContent = student.squad;
+        clone2.querySelector(".expel").addEventListener("click", () => hackedExpel(student));
+        clone2.querySelector(".make_prefect").addEventListener("click", () => togglePrefect(student));
+        clone2.querySelector(".make_squad").addEventListener("click", () => hackedSquad(student));
+        dest2.appendChild(clone2);
+
+    }
+
+    function hackedExpel(student) {
+
+        if (student.id >= 100) {
+            alert("THIS STUDENT CANNTO BE EXPELLED!")
+        } else {
+            expelledStudents.push(student);
+            data.splice(data.indexOf(student), 1);
+
+            hackedDisplay(data);
+
+        }
+
+    }
+
+    function hackedSquad(student) {
+
+        setTimeout(alert("NO SQUAD CHOSEN", 1000));
+
+    }
+
+    function randomizeBlood(student) {
+
+        if (student.blood === "pure") {
+
+            let bloodNumber = Math.round(Math.random() * 1);
+
+            if (bloodNumber === 0) {
+
+                student.bloodNew = "mud";
+
+                return student.bloodNew;
+
+            } else {
+                student.bloodNew = "half";
+                return student.bloodNew;
+            }
+
+
+        } else {
+            student.bloodNew = "pure";
+            return student.bloodNew;
+        }
+
+
+    }
 
 }
