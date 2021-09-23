@@ -29,13 +29,12 @@ article:nth-child(odd) {
     color: rgb(109, 60, 0);
 }
 
-body {
+html {
 
     background: fixed;
-    max-width: 100%;
     margin: 15rem 5rem 0rem 5rem;
     background-color: black;
-    background-image: url(/HP_img/HP_assignment.png);
+    background-image: url(HP_assignment.png);
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -52,4 +51,86 @@ body {
     
 }
 
+/* Buttons */
 
+
+#student_filter {
+    
+    margin: 1rem 2rem 1rem 2rem;
+    position: absolute;
+}
+
+#student_filter button {
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    cursor: pointer;
+   
+    
+}
+
+.all img {
+
+    width: 60%;
+}
+
+.all {
+   
+   position: relative;
+   background-color: transparent;
+   border: none;
+   
+  
+} 
+.expelled img{
+    width: 60%;
+}
+
+.expelled {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.houses {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.houses img{
+    
+    width: 60%;
+   
+}
+
+.non-expelled img {
+
+    width: 60%;
+
+}
+
+.non-expelled {
+    position: relative; 
+    border: none; 
+    background-color: transparent;
+
+}
+
+.resp img {
+
+    width: 60%;
+}
+
+.resp {
+
+    position: relative;
+    border: none; 
+    background-color: transparent;
+    
+}
+
+#student_filter {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+}
