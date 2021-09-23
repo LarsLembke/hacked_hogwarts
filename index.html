@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <nav id="students_sort">
+            <button class="sort" data-sort="firstname">Firstname</button>
+            <button class="sort" data-sort="lastname">Lastname</button>
+            <button class="sort" data-sort="house">Hogwartshouse</button>
+        </nav>
+        <nav id="student_filter">
+            <button class="filter" data-filter="Gryffindor">Gryffindor</button>
+            <button class="filter" data-filter="Hufflepuff">Hufflepuff</button>
+            <button class="filter" data-filter="Ravenclaw">Ravenclaw</button>
+            <button class="filter" data-filter="Slytherin">Slytherin</button>
+            <button class="filter" data-filter="prefect">Prefects</button>
+            <button class="filter" data-filter="squad">Inquisitorial Squad</button>
+            <button class="filter" data-filter="expelled">Expelled Students</button>
+            <button class="filter" data-filter="all">All</button>
+        </nav>
+        <input type="text" id="searchInput">
+        <div id="popup"></div>
+        <div id="list"></div>
+    </main>
+    <template id="temp">
+        <article class="student">
+            <p id="fullname"></p>
+            <p id="house"></p>
+        </article>
+    </template>
+    <template id="temp_popup">
+        <img src="" alt="" class="img_popup">
+        <p class="fullname_popup"></p>
+        <p class="house_popup"></p>
+        <p class="blood_popup"></p>
+        <button class="make_prefect">Add to prefects</button>
+        <p class="prefect_popup"></p>
+        <button class="make_squad">Add to Inquisitorial Squad</button>
+        <p class="squad_popup"></p>
+        <button class="expel">EXPEL STUDENT</button>
+    </template>
+    <footer></footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
