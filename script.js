@@ -95,7 +95,7 @@ function displayData(data) {
 
     document.querySelector("#no_students").textContent = "Students enrolled: " + dataAll.length;
     document.querySelector("#no_expelled").textContent = "Students expelled: " + expelledStudents.length;
-    document.querySelector("#students_display").textContent = "Students on sreen: " + data.length;
+    document.querySelector("#students_display").textContent = "Students displayed: " + data.length;
     document.querySelector("#no_g").textContent = "Student in Gryffindor: " + dataAll.filter(stud => stud.house === "Gryffindor").length;
     document.querySelector("#no_h").textContent = "Student in Hufflepuff: " + dataAll.filter(stud => stud.house === "Hufflepuff").length;
     document.querySelector("#no_r").textContent = "Student in Ravenclaw: " + dataAll.filter(stud => stud.house === "Ravenclaw").length;
@@ -124,7 +124,7 @@ function displayExpelled(student) {
 
     document.querySelector("#no_students").textContent = "Students enrolled: " + dataAll.length;
     document.querySelector("#no_expelled").textContent = "Students expelled: " + expelledStudents.length;
-    document.querySelector("#students_display").textContent = "Students on sreen: " + expelledStudents.length;
+    document.querySelector("#students_display").textContent = "Students displayed: " + expelledStudents.length;
     document.querySelector("#no_g").textContent = "Student in Gryffindor: " + dataAll.filter(stud => stud.house === "Gryffindor").length;
     document.querySelector("#no_h").textContent = "Student in Hufflepuff: " + dataAll.filter(stud => stud.house === "Hufflepuff").length;
     document.querySelector("#no_r").textContent = "Student in Ravenclaw: " + dataAll.filter(stud => stud.house === "Ravenclaw").length;
@@ -396,6 +396,24 @@ function getName(student) {
 
     if (studentSplit.length == 2) {
 
+        if (studentSplit[1].includes("-")) {
+            const indexDash = studentSplit[1].indexOf("-");
+
+            let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
+            let lastName = studentSplit[1].substring(0, 1).toUpperCase() + studentSplit[1].substring(indexDash, indexDash + 1).toUpperCase() + studentSplit[1].substring(1).toLowerCase(0);
+
+            const nameDone = {
+                firstname: firstName,
+                lastname: lastName
+            };
+
+            //console.log("cap")
+
+            return nameDone;
+
+
+        }
+
         let studentSplitCap = capFirstNoMiddle(studentSplit);
 
         student.firstname = studentSplitCap.firstname
@@ -406,6 +424,23 @@ function getName(student) {
         return student.firstname + student.lastname + student.fullname;
 
     } else if (studentSplit.length > 2) {
+
+        if (studentSplit[1].includes("\"")) {
+
+            let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
+            let nickName = studentSplit[1].substring(1, 2).toUpperCase() + studentSplit[1].substring(2).toLowerCase(0);
+            let lastName = studentSplit[2].substring(0, 1).toUpperCase() + studentSplit[2].substring(1).toLowerCase(0);
+
+
+            const nameDone = {
+                firstname: firstName,
+                nickname: nickName,
+                lastname: lastName
+            };
+
+            return nameDone;
+
+        }
 
         let studentSplitCap = capFirstMiddle(studentSplit);
 
@@ -537,7 +572,7 @@ function hackTheSystem() {
 
         document.querySelector("#no_students").textContent = "Students enrolled: " + dataAll.length;
         document.querySelector("#no_expelled").textContent = "Students expelled: " + expelledStudents.length;
-        document.querySelector("#students_display").textContent = "Students on sreen: " + data.length;
+        document.querySelector("#students_display").textContent = "Students displayed: " + data.length;
         document.querySelector("#no_g").textContent = "Student in Gryffindor: " + dataAll.filter(stud => stud.house === "Gryffindor").length;
         document.querySelector("#no_h").textContent = "Student in Hufflepuff: " + dataAll.filter(stud => stud.house === "Hufflepuff").length;
         document.querySelector("#no_r").textContent = "Student in Ravenclaw: " + dataAll.filter(stud => stud.house === "Ravenclaw").length;
