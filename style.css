@@ -45,7 +45,7 @@ html {
 
 #list {
 
-    margin: -25rem 0rem 5rem 5rem;
+    margin: -25rem 5rem 5rem 5rem;
     background: rgba(200, 137, 50, 0.2);
     overflow: hidden;
     
@@ -61,7 +61,7 @@ html {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     position: relative;
-    top: -20rem;
+    top: -22rem;
 
 }
 
@@ -76,7 +76,7 @@ html {
 
     position: relative;
     width: 65%;
-    top: -0.5rem;
+    
 }
 
 .all {
@@ -90,7 +90,7 @@ html {
 .expelled img{
     position: relative;
     width: 150%;
-    top: 1.5rem;
+    top: 2rem;
     right: 4rem;
 }
 
@@ -138,3 +138,117 @@ html {
     background-color: transparent;
     
 }
+
+/* Students sort */
+
+#students_sort {
+    position: relative; 
+    top: -24.5vw;
+    left: 6vw;
+    
+    
+}
+
+.sort {
+
+    font-size: 1rem;
+    font-family: itc-american-typewriter, serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0.4vw;
+    margin-left: 1vw;
+    color: rgb(58, 32, 0);
+    background-color: rgb(255, 242, 223);
+    border-radius: 5px;
+    border-color:rgb(191, 105, 0);
+    
+}
+
+#searchInput {
+    position: relative; 
+    top: -24vw; 
+    float: right;
+    right: 9.5vw;
+    
+}
+
+.search {
+    font-family: itc-american-typewriter, serif;
+    font-style: normal;
+    position: relative;
+    top: -25vw;
+    float: right; 
+    right: 23vw;
+    font-size: 1.2rem;
+}
+
+/* Copy entire section below and swap the first image in popup to fit house */
+
+#popup {
+    background-image:url(/HP_groen_popup.png);
+    background-size: cover;
+    width: 800px; 
+    height: 600px;
+    position: fixed; 
+    top: 10%; 
+    left: 25%;
+}
+
+#popup img {
+    position: fixed; 
+    top: 25vw;
+    left: 40vw;
+    width: 150px;
+    height: 150px;
+}
+
+.fullname_popup {
+    font-size: 1.4rem;
+    position: relative;
+    top: 16.5vw;
+    left: 15.1vw;
+    color: white;
+}
+
+.expel {
+    background-image: url(/HP_expel.png);
+    background-size: cover; 
+    width: 8.7vw; 
+    height: 8.4vw; 
+    background-color: transparent;
+    border: none;
+    top: -17.5vw;
+    left: 37vw;
+    position: relative;
+
+}
+
+.make_prefect {
+    background-image: url(/HP_prefect.png);
+    background-size: cover; 
+    width: 8.7vw; 
+    height: 9.2vw; 
+    background-color: transparent;
+    border: none;
+    left: 27vw;
+    position: relative;
+}
+
+.make_squad {
+    font-size: 2rem;
+    font-family: atocha, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    border: none; 
+    background-color: transparent;
+    position: relative;
+    top: -2vw;
+    left: 27vw;
+
+}
+
+/* Copy end here */
+
+
+
+
