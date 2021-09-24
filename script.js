@@ -136,6 +136,16 @@ function displayPopUp(student) {
 
     //console.log("WHAT");
 
+    if (student.house === "Gryffindor") {
+        document.querySelector("#popup").classList.add("red")
+    } else if (student.house === "Hufflepuff") {
+        document.querySelector("#popup").classList.add("yellow")
+    } else if (student.house === "Ravenclaw") {
+        document.querySelector("#popup").classList.add("blue")
+    } else {
+        document.querySelector("#popup").classList.add("green")
+    }
+
     let imgCode;
 
     if (student.lastname === "Patil") {
