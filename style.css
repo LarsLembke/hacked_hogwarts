@@ -624,7 +624,120 @@ article:nth-child(odd) {
 
  }
 
- 
+ /* YELLOW POPUP */
+
+#popup .hacked_yellow {
+    background-image:url(/HP_hackthesystem_gul_popup.png);
+    background-size: cover;
+    width: 800px; 
+    height: 600px;
+    position: fixed; 
+    top: 10%; 
+    left: 25%;
+}
+
+#popup img {
+    position: fixed; 
+    top: 25vw;
+    left: 40vw;
+    width: 150px;
+    height: 150px;
+}
+
+.fullname_popup {
+    font-size: 1.4rem;
+    position: relative;
+    top: 16.5vw;
+    left: 15.1vw;
+    color: white;
+}
+
+/* BLUE POPUP */
+
+#popup .hacked_blue {
+    background-image:url(/HP_hackthesystem_blue_popup.png);
+    background-size: cover;
+    width: 800px; 
+    height: 600px;
+    position: fixed; 
+    top: 10%; 
+    left: 25%;
+}
+
+#popup img {
+    position: fixed; 
+    top: 25vw;
+    left: 40vw;
+    width: 150px;
+    height: 150px;
+}
+
+.fullname_popup {
+    font-size: 1.4rem;
+    position: relative;
+    top: 16.5vw;
+    left: 15.1vw;
+    color: white;
+}
+
+
+/* GREEN POPUP */
+
+#popup .green {
+    background-image:url(/HP_hackthesystem_groen_popup.png);
+    background-size: cover;
+    width: 800px; 
+    height: 600px;
+    position: fixed; 
+    top: 10%; 
+    left: 25%;
+}
+
+#popup img {
+    position: fixed; 
+    top: 25vw;
+    left: 40vw;
+    width: 150px;
+    height: 150px;
+}
+
+.fullname_popup {
+    font-size: 1.4rem;
+    position: relative;
+    top: 16.5vw;
+    left: 15.1vw;
+    color: white;
+}
+
+/* RED POPUP */
+
+#popup .hacked_red {
+    background-image:url(/HP_hackthesystem_roed_popup.png);
+    background-size: cover;
+    width: 800px; 
+    height: 600px;
+    position: fixed; 
+    top: 10%; 
+    left: 25%;
+}
+
+#popup img {
+    position: fixed; 
+    top: 25vw;
+    left: 40vw;
+    width: 150px;
+    height: 150px;
+}
+
+.fullname_popup {
+    font-size: 1.4rem;
+    position: relative;
+    top: 16.5vw;
+    left: 15.1vw;
+    color: white;
+}
+
+
 
 
 
