@@ -518,7 +518,6 @@ article:nth-child(odd) {
      position: relative;
      margin: auto;
      width: 65%;
-   
     
 
  }
@@ -624,6 +623,8 @@ article:nth-child(odd) {
 
  }
 
+ /* Hacked popups */
+
  /* YELLOW POPUP */
 
 #popup .hacked_yellow {
@@ -649,7 +650,7 @@ article:nth-child(odd) {
     position: relative;
     top: 16.5vw;
     left: 15.1vw;
-    color: white;
+    color:rgb(18, 218, 0);
 }
 
 /* BLUE POPUP */
@@ -677,7 +678,7 @@ article:nth-child(odd) {
     position: relative;
     top: 16.5vw;
     left: 15.1vw;
-    color: white;
+    color:rgb(18, 218, 0);
 }
 
 
@@ -706,7 +707,7 @@ article:nth-child(odd) {
     position: relative;
     top: 16.5vw;
     left: 15.1vw;
-    color: white;
+    color:rgb(18, 218, 0);
 }
 
 /* RED POPUP */
@@ -734,7 +735,7 @@ article:nth-child(odd) {
     position: relative;
     top: 16.5vw;
     left: 15.1vw;
-    color: white;
+    color:rgb(18, 218, 0);
 }
 
 
