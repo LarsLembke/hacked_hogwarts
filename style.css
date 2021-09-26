@@ -18,13 +18,13 @@ article {
   
 }
 
-/* article:nth-child(odd) {
+article:nth-child(odd) {
     padding: 0rem 0rem 0rem 1rem;
     background-color: rgba(200, 137, 50, 0.2);
     color: rgb(109, 60, 0);
 } */
 
-/* html {
+ html {
 
     background: fixed;
     margin: 15rem 5rem 0rem 5rem;
@@ -36,20 +36,20 @@ article {
     -webkit-text-stroke: 1px rgb(58, 32, 0);
 
    
-} */
+} 
 
-/* #list {
+ #list {
 
     margin: -25rem 5rem 5rem 5rem;
     background: rgba(200, 137, 50, 0.2);
     overflow: hidden;
     
-} */
+} 
 
 /* Buttons/nav */
 
 
-/* #student_filter {
+#student_filter {
    align-items: center;
     margin: 15rem 10rem 1rem 15rem;
     display: grid; 
@@ -59,13 +59,13 @@ article {
 
 } */
 
-/* #student_filter button {
+#student_filter button {
     cursor: pointer;
    
     
-} */
+} 
 
-/* .all img {
+.all img {
 
     position: relative;
     width: 65%;
@@ -134,7 +134,7 @@ article {
 
 /* Students sort */
 
-/* #students_sort {
+#students_sort {
     position: relative; 
     top: -24.5vw;
     left: 6vw;
@@ -182,7 +182,7 @@ article {
 
 /* GREEN POPUP */
 
-/* #popup .green {
+#popup .green {
     background-image:url(/HP_groen_popup.png);
     background-size: cover;
     width: 800px; 
@@ -247,7 +247,7 @@ article {
 
 /* RED POPUP */
 
-/* #popup .red {
+#popup .red {
     background-image:url(/HP_roed_popup.png);
     background-size: cover;
     width: 800px; 
@@ -308,11 +308,11 @@ article {
     top: -2vw;
     left: 27vw;
 
-} */
+} 
 
 /* YELLOW POPUP */
 
-/* #popup .yellow {
+#popup .yellow {
     background-image:url(/HP_gul_popup.png);
     background-size: cover;
     width: 800px; 
@@ -373,11 +373,11 @@ article {
     top: -2vw;
     left: 27vw;
 
-} */
+} 
 
 /* BLUE POPUP */
 
-/* #popup .blue {
+#popup .blue {
     background-image:url(/HP_blaa_popup.png);
     background-size: cover;
     width: 800px; 
@@ -438,9 +438,9 @@ article {
     top: -2vw;
     left: 27vw;
 
-} */
+}
 
-/* .hat {
+.hat {
 
     background-image: url(/HP_sorting_hat.png);
     background-color: transparent; 
@@ -451,7 +451,7 @@ article {
     width: 100px;
     height: 100px;
    
-} */
+} 
 
 /* HACK THE SYSTEM */
 
@@ -471,7 +471,7 @@ article {
 
 }
 
-html {
+.hacked_html {
 
     background: fixed;
     margin: 15rem 5rem 0rem 5rem;
@@ -481,12 +481,10 @@ html {
     background-repeat:no-repeat;
     background-position: center;
     -webkit-text-stroke: transparent;
-    
-
    
 }
 
-#list {
+.hacked_list {
 
     background-color: transparent;
     margin: 5rem 5rem 5rem 10rem;
@@ -494,7 +492,7 @@ html {
     
 }
 
-article {
+.hacked_article {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -507,7 +505,7 @@ article {
     padding: 0rem 0rem 0rem 1rem;
 }
 
-article:nth-child(odd) {
+.hacked_article:nth-child(odd) {
     padding: 0rem 0rem 0rem 1rem;
     color: rgb(18, 218, 0);
 }
@@ -525,7 +523,7 @@ article:nth-child(odd) {
 
  }
 
-  #students_sort {
+  .hacked_students_sort {
     position: relative; 
     margin: 0 auto;
     top: 2vw;
@@ -534,7 +532,7 @@ article:nth-child(odd) {
     
 }
 
-.sort {
+.hacked_sort {
 
     font-size: 1rem;
     font-family: itc-american-typewriter, serif;
