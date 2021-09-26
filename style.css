@@ -182,7 +182,7 @@ html {
 
 /* GREEN POPUP */
 
- #popup .green {
+.green {
     background-image:url(/HP_groen_popup.png);
     background-size: cover;
     width: 800px; 
@@ -247,7 +247,7 @@ html {
 
 /* RED POPUP */
 
- #popup .red {
+ .red {
     background-image:url(/HP_roed_popup.png);
     background-size: cover;
     width: 800px; 
@@ -312,8 +312,8 @@ html {
 
 /* YELLOW POPUP */
 
- #popup .yellow {
-    background-image:url(/HP_gul_popup.png);
+.yellow {
+    background-image: url(/HP_gul_popup.png);
     background-size: cover;
     width: 800px; 
     height: 600px;
@@ -377,7 +377,7 @@ html {
 
 /* BLUE POPUP */
 
- #popup .blue {
+ .blue {
     background-image:url(/HP_blaa_popup.png);
     background-size: cover;
     width: 800px; 
