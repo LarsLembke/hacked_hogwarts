@@ -528,6 +528,7 @@ function hackTheSystem() {
     console.log("!!!THE SYSTEM IS COMPROMISED!!!");
 
     addSelf();
+    hackedStyling();
 
     function addSelf() {
 
@@ -602,6 +603,17 @@ function hackTheSystem() {
             imgCode = `images/${student.lastname.toLowerCase()}_${student.firstname[0].toLowerCase()}.png`;
         }
 
+
+        if (student.house === "Gryffindor") {
+            document.querySelector("#popup").classList.add("hacked_red")
+        } else if (student.house === "Hufflepuff") {
+            document.querySelector("#popup").classList.add("hacked_ryellow")
+        } else if (student.house === "Ravenclaw") {
+            document.querySelector("#popup").classList.add("hacked_rblue")
+        } else {
+            document.querySelector("#popup").classList.add("hacked_rgreen")
+        }
+
         const temp2 = document.querySelector("#temp_popup").content;
         const dest2 = document.querySelector("#popup");
 
@@ -666,6 +678,15 @@ function hackTheSystem() {
         }
 
 
+    }
+
+    function hackedStyling() {
+        document.querySelector("html").classList.add("hacked_html");
+        document.querySelector("#list").classList.add("hacked_list");
+        document.querySelectorAll("article").classList.add("hacked_article");
+        document.querySelectorAll(".filter").classList.add("hacked_houses");
+        document.querySelector(".sort").classList.add("hacked_sort");
+        document.querySelector("#hat").classList.add("hacked_hat");
     }
 
 }
