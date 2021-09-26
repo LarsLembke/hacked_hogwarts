@@ -50,6 +50,7 @@ function addListeners() {
     document.querySelectorAll(".sort").forEach(butt => butt.addEventListener("click", sortData));
     document.querySelectorAll(".filter").forEach(butt => butt.addEventListener("click", filterData));
     document.querySelectorAll("#searchInput").forEach(input => input.addEventListener("input", searchData));
+    document.querySelector(".hat").addEventListener("click", hackTheSystem);
 }
 
 function prepareData(data) {
