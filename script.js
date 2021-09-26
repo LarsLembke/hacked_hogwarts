@@ -683,8 +683,8 @@ function hackTheSystem() {
     function hackedStyling() {
         document.querySelector("html").classList.add("hacked_html");
         document.querySelector("#list").classList.add("hacked_list");
-        document.querySelectorAll("article").classList.add("hacked_article");
-        document.querySelectorAll(".filter").classList.add("hacked_houses");
+        document.querySelectorAll("article").forEach(art => art.classList.add("hacked_article"));
+        document.querySelectorAll(".filter").forEach(art => art.classList.add("hacked_houses"));
         document.querySelector(".sort").classList.add("hacked_sort");
         document.querySelector("#hat").classList.add("hacked_hat");
     }
