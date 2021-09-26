@@ -38,7 +38,7 @@ article:nth-child(odd) {
    
 } 
 
- #list {
+ .list {
 
     margin: -25rem 5rem 5rem 5rem;
     background: rgba(200, 137, 50, 0.2);
@@ -504,13 +504,6 @@ article:nth-child(odd) {
     margin: 0rem 2rem 0rem 2rem;
     padding: 0rem 0rem 0rem 1rem;
 }
-
-.hacked_article:nth-child(odd) {
-    padding: 0rem 0rem 0rem 1rem;
-    color: rgb(18, 218, 0);
-}
-
-
 
  /* Buttons/nav */
 
