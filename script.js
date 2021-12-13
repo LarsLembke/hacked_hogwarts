@@ -57,7 +57,10 @@ function addListeners() {
 }
 
 function closePopup(e) {
+    console.log(e.target.parentElement)
+    e.target.parentElement.classList = "popup";
     e.target.parentElement.style.display = "none";
+
     // e.target.parentElement.delete
 }
 
@@ -70,6 +73,7 @@ function dropdownH(e) {
 
     } else {
         document.querySelector("#dropdownH").style.display = "none"
+        console.log("set none")
     }
 
 }
