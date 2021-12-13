@@ -50,8 +50,43 @@ function addListeners() {
     document.querySelectorAll(".sort").forEach(butt => butt.addEventListener("click", sortData));
     document.querySelectorAll(".filter").forEach(butt => butt.addEventListener("click", filterData));
     document.querySelectorAll("#searchInput").forEach(input => input.addEventListener("input", searchData));
-    document.querySelector(".hat").addEventListener("click", hackTheSystem);
+    // document.querySelector(".hat").addEventListener("click", hackTheSystem);
+    document.querySelector("button.houses").addEventListener("click", dropdownH)
+    document.querySelector('.resp').addEventListener("click", dropdownR)
+    document.querySelector('.close').addEventListener("click", closePopup)
 }
+
+function closePopup(e) {
+    console.log(e.target.parentElement)
+    e.target.parentElement.classList = "popup";
+    e.target.parentElement.style.display = "none";
+
+    // e.target.parentElement.delete
+}
+
+function dropdownH(e) {
+
+    console.log(e.target)
+
+    if (document.querySelector("#dropdownH").style.display == "none") {
+    document.querySelector("#dropdownH").style.display = "block"
+
+    } else {
+        document.querySelector("#dropdownH").style.display = "none"
+        console.log("set none")
+    }
+
+}
+
+function dropdownR() {
+    if (document.querySelector("#dropdownR").style.display == "none") {
+        document.querySelector("#dropdownR").style.display = "block"
+    
+    } else {
+            document.querySelector("#dropdownR").style.display = "none"
+    }
+}
+
 
 function prepareData(data) {
     console.log("prepareData");
@@ -134,6 +169,10 @@ function displayExpelled(student) {
 
 function displayPopUp(student) {
 
+    if (document.querySelector("#popup").style.display === "none") {
+        document.querySelector("#popup").style.display = "block"
+    }
+
 
     //console.log("WHAT");
 
@@ -156,6 +195,8 @@ function displayPopUp(student) {
     }
 
 
+
+
     const temp2 = document.querySelector("#temp_popup").content;
     const dest2 = document.querySelector("#popup");
 
@@ -164,6 +205,7 @@ function displayPopUp(student) {
     const clone2 = temp2.cloneNode(true);
 
     clone2.querySelector(".fullname_popup").textContent = student.fullname;
+    clone2.querySelector('.close').addEventListener("click", closePopup)
     clone2.querySelector(".img_popup").src = imgCode;
     clone2.querySelector(".house_popup").textContent = student.house;
     clone2.querySelector(".blood_popup").textContent = student.blood;
@@ -246,6 +288,7 @@ function sortData(event) {
 function filterData(event) {
 
     let filterParam = event.target.dataset.filter;
+    console.log(event.target.dataset)
 
     if (filterParam === "expelled") {
 
@@ -256,29 +299,29 @@ function filterData(event) {
 
         function houseFilter(student) {
 
-            console.log("house")
+            console.log(filterParam)
 
-            if (filterParam === "all") {
+            if (filterParam == "all") {
                 return true
             } else if (filterParam === "squad" && student.squad === true) {
 
-                console.log(student.house, filterParam);
+                // console.log(student.house, filterParam);
 
                 return true;
             } else if (filterParam === "prefect" && student.prefect === true) {
 
-                console.log(student.house, filterParam);
+                // console.log(student.house, filterParam);
 
                 return true;
             } else if (student.house == filterParam) {
 
-                console.log(student.house, filterParam);
+                // console.log(student.house, filterParam);
 
                 return true;
             } else {
-                console.log(student.house, filterParam);
+                // console.log(student.house, filterParam);
 
-                console.log("false");
+                // console.log("false");
                 return false
             }
 
@@ -301,7 +344,7 @@ function searchData() {
 
 
 
-        //console.log(students.firstname);
+        console.log(students.firstname);
 
         if (students.firstname.toLowerCase().includes(searchInput.toLowerCase())) {
             console.log(students);
@@ -407,23 +450,23 @@ function getName(student) {
 
     if (studentSplit.length == 2) {
 
-        if (studentSplit[1].includes("-")) {
-            const indexDash = studentSplit[1].indexOf("-");
+        // if (studentSplit[1].includes("-")) {
+        //     const indexDash = studentSplit[1].indexOf("-");
 
-            let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
-            let lastName = studentSplit[1].substring(0, 1).toUpperCase() + studentSplit[1].substring(indexDash, indexDash + 1).toUpperCase() + studentSplit[1].substring(1).toLowerCase(0);
+        //     let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
+        //     let lastName = studentSplit[1].substring(0, 1).toUpperCase() + studentSplit[1].substring(indexDash, indexDash + 1).toUpperCase() + studentSplit[1].substring(1).toLowerCase(0);
 
-            const nameDone = {
-                firstname: firstName,
-                lastname: lastName
-            };
+        //     const nameDone = {
+        //         firstname: firstName,
+        //         lastname: lastName
+        //     };
 
-            //console.log("cap")
+        //     //console.log("cap")
 
-            return nameDone;
+        //     return nameDone;
 
 
-        }
+        // }
 
         let studentSplitCap = capFirstNoMiddle(studentSplit);
 
@@ -436,22 +479,22 @@ function getName(student) {
 
     } else if (studentSplit.length > 2) {
 
-        if (studentSplit[1].includes("\"")) {
+        // if (studentSplit[1].includes("\"")) {
 
-            let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
-            let nickName = studentSplit[1].substring(1, 2).toUpperCase() + studentSplit[1].substring(2).toLowerCase(0);
-            let lastName = studentSplit[2].substring(0, 1).toUpperCase() + studentSplit[2].substring(1).toLowerCase(0);
+        //     let firstName = studentSplit[0].substring(0, 1).toUpperCase() + studentSplit[0].substring(1).toLowerCase(0);
+        //     let nickName = studentSplit[1].substring(1, 2).toUpperCase() + studentSplit[1].substring(2).toLowerCase(0);
+        //     let lastName = studentSplit[2].substring(0, 1).toUpperCase() + studentSplit[2].substring(1).toLowerCase(0);
 
 
-            const nameDone = {
-                firstname: firstName,
-                nickname: nickName,
-                lastname: lastName
-            };
+        //     const nameDone = {
+        //         firstname: firstName,
+        //         nickname: nickName,
+        //         lastname: lastName
+        //     };
 
-            return nameDone;
+        //     return nameDone;
 
-        }
+        // }
 
         let studentSplitCap = capFirstMiddle(studentSplit);
 
@@ -528,7 +571,6 @@ function hackTheSystem() {
     console.log("!!!THE SYSTEM IS COMPROMISED!!!");
 
     addSelf();
-    hackedStyling();
 
     function addSelf() {
 
@@ -680,13 +722,5 @@ function hackTheSystem() {
 
     }
 
-    function hackedStyling() {
-        document.querySelector("html").classList.add("hacked_html");
-        document.querySelector("#list").classList.add("hacked_list");
-        document.querySelectorAll("article").forEach(art => art.classList.add("hacked_article"));
-        document.querySelectorAll(".filter").forEach(art => art.classList.add("hacked_houses"));
-        document.querySelector(".sort").classList.add("hacked_sort");
-        document.querySelector("#hat").classList.add("hacked_hat");
-    }
 
 }

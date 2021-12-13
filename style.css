@@ -1,465 +1,426 @@
 article {
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    font-family: itc-american-typewriter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.4rem;
-    margin: 0rem 2rem 0rem 2rem;
-    color: rgb(135, 63, 0);
-    padding: 0rem 0rem 0rem 1rem;
-    
-    text-shadow: 0 0 7px rgb(255, 204, 165),
-    0 0 10px rgb(255, 185, 142),
-    0 0 21px rgb(255, 197, 111),
-    0 0 92px rgb(255, 255, 255),
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: itc-american-typewriter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0rem 2rem 0rem 2rem;
+  color: rgb(135, 63, 0);
+  padding: 0rem 0rem 0rem 1rem;
+  /* text-shadow: 0 0 7px rgb(255, 204, 165), 0 0 10px rgb(255, 185, 142),
+    0 0 21px rgb(255, 197, 111), 0 0 92px rgb(255, 255, 255); */
 }
 
- article:nth-child(odd) {
-    padding: 0rem 0rem 0rem 1rem;
-    background-color: rgba(200, 137, 50, 0.2);
-    color: rgb(109, 60, 0);
-} 
+article:nth-child(odd) {
+  padding: 0rem 0rem 0rem 1rem;
+  background-color: rgba(200, 137, 50, 0.2);
+  color: rgb(109, 60, 0);
+}
 
 html {
-
-    background: fixed;
-    margin: 15rem 5rem 0rem 5rem;
-    background-color: black;
-    background-image: url(HP_assignment.png);
-    background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;
-    -webkit-text-stroke: 1px rgb(58, 32, 0);
-
-   
-} 
+  background: fixed;
+  margin: 15rem 5rem 0rem 5rem;
+  background-color: black;
+  background-image: url(HP_assignment.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* -webkit-text-stroke: 1px rgb(58, 32, 0); */
+}
 
 .list {
-
-    margin: -25rem 5rem 5rem 5rem;
-    background: rgba(200, 137, 50, 0.2);
-    overflow: hidden;
-    
-} 
+  margin: -25rem 5rem 5rem 5rem;
+  background: rgba(200, 137, 50, 0.2);
+  overflow: hidden;
+}
 
 /* Buttons/nav */
 
-
 #student_filter {
-   align-items: center;
-    margin: 15rem 10rem 1rem 15rem;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: relative;
-    top: -22rem;
-
-} 
+  align-items: center;
+  margin: 15rem 10rem 1rem 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  top: -22rem;
+}
 
 #student_filter button {
-    cursor: pointer;
-   
-    
-} 
+  cursor: pointer;
+}
 
 .all img {
-
-    position: relative;
-    width: 65%;
-    
+  position: relative;
+  width: 65%;
 }
 
 .all {
-   
-   position: relative;
-   background-color: transparent;
-   border: none;
-   
-  
-} 
-.expelled img{
-    position: relative;
-    width: 150%;
-    top: 2rem;
-    right: 4rem;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.expelled img {
+  position: relative;
+  width: 150%;
+  top: 2rem;
+  right: 4rem;
 }
 
 .expelled {
-    position: relative;
-    border: none;
-    background-color: transparent;
-    
+  position: relative;
+  border: none;
+  background-color: transparent;
 }
 
 .houses {
-    position: relative;
-    background-color: transparent;
-    border: none;
+  position: relative;
+  background-color: transparent;
+  border: none;
 }
 
-.houses img{
-    
-    width: 50%;
-   
+.houses img {
+  width: 50%;
 }
 
 .non-expelled img {
-
-    width: 55%;
-
+  width: 55%;
 }
 
 .non-expelled {
-    position: relative; 
-    border: none; 
-    background-color: transparent;
-
+  position: relative;
+  border: none;
+  background-color: transparent;
 }
 
 .resp img {
-
-    width: 85%;
+  width: 85%;
 }
 
 .resp {
-
-    position: relative;
-    border: none; 
-    background-color: transparent;
-    
-}  
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
 
 /* Students sort */
 
- #students_sort {
-    position: relative;
-    top: -24.5vw;
-    left: 6vw;
-    
-    
+#students_sort {
+  position: relative;
+  top: -24.5vw;
+  left: 6vw;
 }
 
 .sort {
-
-    font-size: 1rem;
-    font-family: itc-american-typewriter, serif;
-    font-style: normal;
-    font-weight: 500;
-    padding: 0.4vw;
-    margin-left: 1vw;
-    color: rgb(58, 32, 0);
-    background-color: rgb(255, 242, 223);
-    border-radius: 5px;
-    border-color:rgb(191, 105, 0);
-    
-} 
+  font-size: 1rem;
+  font-family: itc-american-typewriter, serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0.4vw;
+  margin-left: 1vw;
+  color: rgb(58, 32, 0);
+  background-color: rgb(255, 242, 223);
+  border-radius: 5px;
+  border-color: rgb(191, 105, 0);
+}
 
 /* Search field */
 
 #searchInput {
-    position: relative; 
-    top: -24vw; 
-    float: right;
-    right: 9.5vw;
-    
+  position: relative;
+  top: -24vw;
+  float: right;
+  right: 9.5vw;
 }
 
 .search {
-    font-family: itc-american-typewriter, serif;
-    font-style: normal;
-    position: relative;
-    top: -25vw;
-    float: right; 
-    right: 23vw;
-    font-size: 1.2rem;
+  font-family: itc-american-typewriter, serif;
+  font-style: normal;
+  position: relative;
+  top: -25vw;
+  float: right;
+  right: 23vw;
+  font-size: 1.2rem;
 }
-
 
 /* All popups */
 
 /* GREEN POPUP */
 
- #popup .green {
-    background-image:url(/HP_groen_popup.png);
-    background-size: cover;
-    width: 800px; 
-    height: 600px;
-    position: fixed; 
-    top: 10%; 
-    left: 25%;
+#popup.green {
+  background-image: url(/HP_groen_popup.png);
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: 10%;
+  left: 25%;
 }
 
 #popup img {
-    position: fixed; 
-    top: 25vw;
-    left: 40vw;
-    width: 150px;
-    height: 150px;
+  position: fixed;
+  top: 25vw;
+  left: 40vw;
+  width: 150px;
+  height: 150px;
 }
 
 .fullname_popup {
-    font-size: 1.4rem;
-    position: relative;
-    top: 16.5vw;
-    left: 15.1vw;
-    color: white;
+  font-size: 1.4rem;
+  position: relative;
+  top: 16.5vw;
+  left: 15.1vw;
+  color: white;
 }
 
 .expel {
-    background-image: url(/HP_expel.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 8.4vw; 
-    background-color: transparent;
-    border: none;
-    top: -17.5vw;
-    left: 37vw;
-    position: relative;
-
+  background-image: url(/HP_expel.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 8.4vw;
+  background-color: transparent;
+  border: none;
+  top: -17.5vw;
+  left: 37vw;
+  position: relative;
 }
 
 .make_prefect {
-    background-image: url(/HP_prefect.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 9.2vw; 
-    background-color: transparent;
-    border: none;
-    left: 27vw;
-    position: relative;
+  background-image: url(/HP_prefect.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 9.2vw;
+  background-color: transparent;
+  border: none;
+  left: 27vw;
+  position: relative;
 }
 
 .make_squad {
-    font-size: 2rem;
-    font-family: atocha, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    border: none; 
-    background-color: transparent;
-    position: relative;
-    top: -2vw;
-    left: 27vw;
-
-} 
+  font-size: 2rem;
+  font-family: atocha, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -2vw;
+  left: 27vw;
+}
 
 /* RED POPUP */
 
- #popup .red {
-    background-image:url(/HP_roed_popup.png);
-    background-size: cover;
-    width: 800px; 
-    height: 600px;
-    position: fixed; 
-    top: 10%; 
-    left: 25%;
+#popup.red {
+  background-image: url(/HP_roed_popup.png);
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: 10%;
+  left: 25%;
 }
 
 #popup img {
-    position: fixed; 
-    top: 25vw;
-    left: 40vw;
-    width: 150px;
-    height: 150px;
+  position: fixed;
+  top: 25vw;
+  left: 40vw;
+  width: 150px;
+  height: 150px;
 }
 
 .fullname_popup {
-    font-size: 1.4rem;
-    position: relative;
-    top: 16.5vw;
-    left: 15.1vw;
-    color: white;
+  font-size: 1.4rem;
+  position: relative;
+  top: 16.5vw;
+  left: 15.1vw;
+  color: white;
 }
 
 .expel {
-    background-image: url(/HP_expel.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 8.4vw; 
-    background-color: transparent;
-    border: none;
-    top: -17.5vw;
-    left: 37vw;
-    position: relative;
-
+  background-image: url(/HP_expel.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 8.4vw;
+  background-color: transparent;
+  border: none;
+  top: -17.5vw;
+  left: 37vw;
+  position: relative;
 }
 
 .make_prefect {
-    background-image: url(/HP_prefect.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 9.2vw; 
-    background-color: transparent;
-    border: none;
-    left: 27vw;
-    position: relative;
+  background-image: url(/HP_prefect.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 9.2vw;
+  background-color: transparent;
+  border: none;
+  left: 27vw;
+  position: relative;
 }
 
 .make_squad {
-    font-size: 2rem;
-    font-family: atocha, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    border: none; 
-    background-color: transparent;
-    position: relative;
-    top: -2vw;
-    left: 27vw;
-
-} 
+  font-size: 2rem;
+  font-family: atocha, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -2vw;
+  left: 27vw;
+}
 
 /* YELLOW POPUP */
 
- #popup .yellow {
-    background-image:url(/HP_gul_popup.png);
-    background-size: cover;
-    width: 800px; 
-    height: 600px;
-    position: fixed; 
-    top: 10%; 
-    left: 25%;
+#popup.yellow {
+  background-image: url(/HP_gul_popup.png);
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: 10%;
+  left: 25%;
 }
 
 #popup img {
-    position: fixed; 
-    top: 25vw;
-    left: 40vw;
-    width: 150px;
-    height: 150px;
+  position: fixed;
+  top: 25vw;
+  left: 40vw;
+  width: 150px;
+  height: 150px;
 }
 
 .fullname_popup {
-    font-size: 1.4rem;
-    position: relative;
-    top: 16.5vw;
-    left: 15.1vw;
-    color: white;
+  font-size: 1.4rem;
+  position: relative;
+  top: 16.5vw;
+  left: 15.1vw;
+  color: white;
 }
 
 .expel {
-    background-image: url(/HP_expel.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 8.4vw; 
-    background-color: transparent;
-    border: none;
-    top: -17.5vw;
-    left: 37vw;
-    position: relative;
-
+  background-image: url(/HP_expel.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 8.4vw;
+  background-color: transparent;
+  border: none;
+  top: -17.5vw;
+  left: 37vw;
+  position: relative;
 }
 
 .make_prefect {
-    background-image: url(/HP_prefect.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 9.2vw; 
-    background-color: transparent;
-    border: none;
-    left: 27vw;
-    position: relative;
+  background-image: url(/HP_prefect.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 9.2vw;
+  background-color: transparent;
+  border: none;
+  left: 27vw;
+  position: relative;
 }
 
 .make_squad {
-    font-size: 2rem;
-    font-family: atocha, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    border: none; 
-    background-color: transparent;
-    position: relative;
-    top: -2vw;
-    left: 27vw;
-
-} 
+  font-size: 2rem;
+  font-family: atocha, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -2vw;
+  left: 27vw;
+}
 
 /* BLUE POPUP */
 
- #popup .blue {
-    background-image:url(/HP_blaa_popup.png);
-    background-size: cover;
-    width: 800px; 
-    height: 600px;
-    position: fixed; 
-    top: 10%; 
-    left: 25%;
+#popup.blue {
+  background-image: url(/HP_blaa_popup.png);
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: 10%;
+  left: 25%;
 }
 
 #popup img {
-    position: fixed; 
-    top: 25vw;
-    left: 40vw;
-    width: 150px;
-    height: 150px;
+  position: fixed;
+  top: 25vw;
+  left: 40vw;
+  width: 150px;
+  height: 150px;
 }
 
 .fullname_popup {
-    font-size: 1.4rem;
-    position: relative;
-    top: 16.5vw;
-    left: 15.1vw;
-    color: white;
+  font-size: 1.4rem;
+  position: relative;
+  top: 16.5vw;
+  left: 15.1vw;
+  color: white;
 }
 
 .expel {
-    background-image: url(/HP_expel.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 8.4vw; 
-    background-color: transparent;
-    border: none;
-    top: -17.5vw;
-    left: 37vw;
-    position: relative;
-
+  background-image: url(/HP_expel.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 8.4vw;
+  background-color: transparent;
+  border: none;
+  top: -17.5vw;
+  left: 37vw;
+  position: relative;
 }
 
 .make_prefect {
-    background-image: url(/HP_prefect.png);
-    background-size: cover; 
-    width: 8.7vw; 
-    height: 9.2vw; 
-    background-color: transparent;
-    border: none;
-    left: 27vw;
-    position: relative;
+  background-image: url(/HP_prefect.png);
+  background-size: cover;
+  width: 8.7vw;
+  height: 9.2vw;
+  background-color: transparent;
+  border: none;
+  left: 27vw;
+  position: relative;
 }
 
 .make_squad {
-    font-size: 2rem;
-    font-family: atocha, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    border: none; 
-    background-color: transparent;
-    position: relative;
-    top: -2vw;
-    left: 27vw;
+  font-size: 2rem;
+  font-family: atocha, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -2vw;
+  left: 27vw;
+}
 
-} 
+.hat {
+  background-image: url(/HP_sorting_hat.png);
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 24vw;
+  left: 26.5vw;
+  width: 120px;
+  height: 90px;
+}
 
- .hat {
+#dropdownH {
+  display: none;
+}
 
-    background-image: url(/HP_sorting_hat.png);
-    background-color: transparent; 
-    border:none; 
-    position: fixed;
-    bottom: 24vw;
-    left: 26.5vw;
-    width: 120px;
-    height: 90px;
-   
-} 
+#dropdownR {
+  display: none;
+}
 
- 
+img {
+  pointer-events: none;
+}
 
-
-
-
- 
- 
-
-
-
+#students_sort {
+  max-width: 50vw;
+}
