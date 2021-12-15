@@ -1,19 +1,18 @@
 
 html {
-  
-  width: 100vw;
   background: fixed;
   background-color: black;
   background-image: url(HP_assignment_mobile.png);
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
-  overflow-y: hidden;
 
 }
 
-main {
+body {
   overflow-y: hidden;
   overflow-x: hidden;
+  width: 90vw;
+  margin: 0;
   
  
 }
@@ -35,20 +34,18 @@ article:nth-child(odd) {
 
 
 .list {
-  margin-top: 2vh;
   background: rgba(200, 137, 50, 0.2);
-  height: 51vh;
+  height: 47vh;
   overflow-y: auto;
-  width: 50vw;
-  position: relative; 
+  width: 40vw;
   position: fixed;
-  bottom: 2vh;
+  bottom: 11vh;
+  margin-left: 4vh;
+
 }
 
 .student {
   text-align: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
   width: 40vw;
   color: black;
   font-size: 1rem;
@@ -64,7 +61,7 @@ article:nth-child(odd) {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 95vw;
   
 }
 
@@ -269,8 +266,6 @@ article:nth-child(odd) {
 
 }
 
-
-
 .make_squad {
   font-size: 2rem;
   font-family: atocha, sans-serif;
@@ -471,15 +466,15 @@ img {
 
 #counters {
   text-align: center;
-  width: 30vw;
+  width: 25vw;
   position: relative;
   float: right;
   border: 2px solid rgb(97, 0, 0);
   border-radius: 4px;
-  padding: 1vh;
+  padding: 0.5vh;
   position: fixed; 
-  right: 5vw;
-  top: 47vh;
+  right: 16vw;
+  top: 44vh;
   background-color: rgba(136, 79, 8, 0.536);
 }
 
@@ -491,7 +486,7 @@ img {
 @media screen and (min-width: 769px) {
   html {
     background-image: url(HP_assignment.png);
-    background-size: contain;
+    background-size: cover;
 
   }
 
@@ -506,15 +501,12 @@ img {
   }
 
   .list {
-    margin-top: 2vh;
+    margin-top: 2vw;
     background: rgba(200, 137, 50, 0.2);
-    height: 51vh;
     overflow-y: auto;
     width: 55vw;
-    position: relative; 
-    position: fixed;
-    bottom: 2vh;
-    margin-left: 20vh;
+    margin-left: 11vw;
+    position: absolute;
   }
 
   .student {
@@ -527,8 +519,8 @@ img {
   }
 
   #student_filter {
-    position: relative;
-    margin-top: 12vw;
+    position: absolute;
+    margin-top: 20vh;
     margin-left: 20vh; 
     margin-right: 20vh;
     align-items: center;
@@ -607,19 +599,18 @@ img {
 #counters {
   text-align: center;
   width: 15vw;
-  position: relative;
   float: right;
   border: 2px solid rgb(97, 0, 0);
   border-radius: 4px;
   padding: 2vh;
-  position: fixed; 
-  top: 27.5vw;
-  right: 11vw;
+  position: absolute; 
+  top: 47vh;
+  right: 13vw;
   background-color: rgba(136, 79, 8, 0.536);
 }
 
 .sort {
-  width: 15vh;
+  width: 9vw;
   height: 5vh;
   font-size: 1rem;
   font-family: itc-american-typewriter, serif;
@@ -630,42 +621,47 @@ img {
   background-color: rgb(255, 242, 223);
   border-radius: 5px;
   border-color: rgb(191, 105, 0);
+
 }
 
 #students_sort {
   float: left;
-  margin-left: 20vh;
-  top: 4vh;
-  height: 10vh;
-  position: relative;
-  z-index: 2;
+  margin-left: 11vw;
+  top: 38vh;
+  height: 2vh;
+  position: absolute;
+ 
 }
 
 .search_and_input {
-  margin-top: 1.5vh;
+  margin-top: 3vh;
   display: grid; 
   grid-template-columns: 1fr 1fr;
   float: right;
+  right: 2vw;
   width: 22vh;
+  height: 3vw;
 }
 
 .search {
+  position: relative;
+  top: 0.5vh;
+  left: -1vh;
   font-size: 1.3rem;
   margin: 0;
 }
 
 #searchInput {
   width: 13vh;
-  height: 2vh;
+  height: 3vh;
 }
 
 #dropdownH {
   display: none;
   position: relative;
   float: left;
-  right: 62.5vw;
+  right: 66.5vw;
   top: 8.5vw;
-  
 
 }
 
@@ -730,8 +726,8 @@ img {
   display: none;
   position: relative;
   float: left;
-  right: 48vw;
-  top: 5vw;
+  right: 53.5vw;
+  top: 5.5vw;
 }
 
 #dropdownR .prefect {
@@ -744,6 +740,10 @@ img {
   border-radius: 5px;
 }
 
+#dropdownR .prefect:hover {
+  background-color: rgb(220, 187, 0);
+}
+
 #dropdownR .is {
   width: 5vw;
   height: 2.5vw;
@@ -752,6 +752,10 @@ img {
   border: none;
   border-top: 1px solid black;
   border-radius: 5px;
+}
+
+#dropdownR .is:hover {
+  background-color: rgb(220, 187, 0);
 }
 
 img {
@@ -764,7 +768,7 @@ img {
 
 .close {
   position: fixed;
-  top: 17vw;
+  top: 24vh;
   margin-left: 3vh;
   color: rgb(97, 0, 0);
   background-color: rgb(208, 186, 115);
@@ -797,7 +801,7 @@ img {
   display: flex; 
   flex-direction: column;
   position: relative; 
-  top: 30vh;
+  top: 20vh;
   left: 10vw;
  
  }
@@ -818,15 +822,16 @@ img {
    position: relative;
    display: grid; 
    grid-template-columns: 1fr 1fr;
-   width: 25vw;
-   float: right;
+   width: 10vw;
+   margin-left: 15vw;
+   
    
  }
  
  .prefect_popup {
    position: relative;
    top: -3.5vw;
-     left: 3.5vw;
+     left: 12vh;
      color: rgb(97, 0, 0);
      font-weight: 900;
  }
@@ -834,9 +839,10 @@ img {
  .squad_popup {
    text-align: center;
      position: relative; 
-     left: 4vw;
+     left: 13vh;
      color: rgb(97, 0, 0);
      font-weight: 900;
+     top: -16.5vh;
  }
  
  
@@ -849,7 +855,7 @@ img {
    height: 70vh;
    position: relative;
    margin: auto;
-   margin-top: -15vw;
+   top: 10vh;
  }
  
  
@@ -868,7 +874,7 @@ img {
    height: 8.4vw;
    background-color: transparent;
    border: none;
-   top: 0.5vw;
+   top: 0.6vw;
    position: relative;
  
   
@@ -879,6 +885,8 @@ img {
    background-size: cover;
    width: 8.7vw;
    height: 9.2vw;
+   position: relative;
+   left: 6vh;
    background-color: transparent;
    border: none;
  
@@ -894,7 +902,9 @@ img {
    border: none;
    background-color: transparent;
    grid-column: 1/-1;
-   margin-right: 8vh;
+   position: relative;
+   left: 3vh;
+   top: -10vh;
  
  }
  
@@ -907,7 +917,7 @@ img {
    height: 70vh;
    position: relative;
    margin: auto;
-   margin-top: -15vw;
+   top: 10vh;
  }
  
  
@@ -920,7 +930,7 @@ img {
    height: 70vh;
    position: relative;
    margin: auto;
-   margin-top: -15vw;
+   top: 10vh;
  }
  
  /* BLUE POPUP */
@@ -932,7 +942,7 @@ img {
    height: 70vh;
    position: relative;
    margin: auto;
-   margin-top: -15vw;
+   top: 10vh;
  }
  
 
