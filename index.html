@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Hogwarts</title>
 </head>
 
 <body>
     <header></header>
     <main>
+ 
         <nav id="student_filter">
             <button class="houses"><img src="HP_houses.png"></button>
             <button class="resp"><img src="HP_responsibilities.png"></button>
@@ -32,11 +33,11 @@
                 <button class="filter is" data-filter="squad">Inquisitorial Squad</button>
             </div>
         </nav>
-
+        <div class="search_and_input">
         <p class="search">Search</p>
         <input type="text" id="searchInput">
-
-        <button class="hat" id="hat" data-filter=""><img src="HP_sorting_hat.png" alt=""></button>
+    </div>
+   
 
 
 
@@ -45,28 +46,11 @@
             <button class="sort" data-sort="lastname">Last name</button>
             <button class="sort" data-sort="house">Hogwarts house</button>
         </nav>
+        <div class="hat"><img src="HP_sorting_hat.png" alt=""></div>
         <div id="popup"></div>
         <div id="list" class="list"></div>
-    </main>
-    <template id="temp">
-        <article class="student">
-            <p id="fullname"></p>
-            <p id="house"></p>
-        </article>
-    </template>
-    <template id="temp_popup">
-        <button class="close">X</button>
-        <img src="" alt="" class="img_popup">
-        <p class="fullname_popup"></p>
-        <p class="house_popup"></p>
-        <p class="blood_popup"></p>
-        <button class="make_prefect"></button>
-        <p class="prefect_popup"></p>
-        <button class="make_squad">Add to Inquisitorial Squad</button>
-        <p class="squad_popup"></p>
-        <button class="expel"></button>
-    </template>
-    <footer>
+
+
         <div id="counters">
             <p id="no_students"></p>
             <div id="students_in_house">
@@ -78,7 +62,36 @@
             <div id="no_expelled">Students expelled: </div>
             <div id="students_display"></div>
         </div>
-    </footer>
+    </main>
+    <template id="temp">
+        <article class="student">
+            <p id="fullname"></p>
+            <p id="house"></p>
+        </article>
+    </template>
+    <template id="temp_popup">
+        <button class="close">X</button>
+        <div class="img_name">
+        <img src="" alt="" class="img_popup">
+        <p class="fullname_popup"></p>
+        <div class="house_blood">
+            <p class="house_popup"></p>
+            <p class="blood_popup"></p>
+        </div>
+    </div>
+  
+        <div class="prefect_expel">
+        <button class="make_prefect"></button>
+        <button class="expel"></button>
+        <p class="prefect_popup"></p>
+       
+        <button class="make_squad">Add to Inquisitorial Squad</button>
+        <p class="squad_popup"></p>
+    </div>
+  
+
+    </template>
+  
 
 </body>
 <script src="script.js"></script>
